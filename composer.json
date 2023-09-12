@@ -1,11 +1,11 @@
 {
-    "name": "soarecostin/file-vault",
+    "name": "divergentsoft/file-vault",
     "description": "",
     "keywords": [
         "laravel", "encrypt", "decrypt", "encryption", "decryption",
         "cbc", "php", "file", "file-vault"
     ],
-    "homepage": "https://github.com/soarecostin/file-vault",
+    "homepage": "https://github.com/divergentsoft/file-vault",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -16,8 +16,8 @@
         }
     ],
     "require": {
-        "php": "^7.2|^8.0",
-        "illuminate/support": "5.8.* || 6.*.* || ^7.0 || ^8.0"
+        "php": "^7.2|^8.1",
+        "illuminate/support": "^8.0 || ^9.0 || 10.*"
     },
     "require-dev": {
         "orchestra/testbench": "^5.0|^6.0",
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "SoareCostin\\FileVault\\": "src"
+            "Divergentsoft\\FileVault\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SoareCostin\\FileVault\\Tests\\": "tests"
+            "Divergentsoft\\FileVault\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SoareCostin\\FileVault\\FileVaultServiceProvider"
+                "Divergentsoft\\FileVault\\FileVaultServiceProvider"
             ],
             "aliases": {
-                "FileVault": "SoareCostin\\FileVault\\Facades\\FileVault"
+                "FileVault": "Divergentsoft\\FileVault\\Facades\\FileVault"
             }
         }
     }
