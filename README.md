@@ -12,12 +12,12 @@ With this package, you can encrypt and decrypt files of any size in your Laravel
 
 ## Installation and usage
 
-This package requires PHP 7.2 and Laravel 5.8 or higher.  
+This package requires PHP 7.2 and Laravel 5.8 or higher.
 
 You can install the package via composer:
 
 ```bash
-composer require soarecostin/file-vault
+composer require divergentsoft/file-vault
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ This package will automatically register a facade called `FileVault`. The `FileV
 If you want to change the default `disk` or change the `key`/`cipher` used for encryption, you can publish the config file:
 
 ```
-php artisan vendor:publish --provider="SoareCostin\FileVault\FileVaultServiceProvider"
+php artisan vendor:publish --provider="Divergentsoft\FileVault\FileVaultServiceProvider"
 ```
 
 This is the contents of the published file:
